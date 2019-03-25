@@ -38,7 +38,7 @@
 			$url = 'http://api.serri.codefactory.live/random/';
 			$response = curl_get($url);
 			$result = json_decode($response);
-			echo $result->joke;			
+			echo '<p class="joke1">'.$result->joke.'</p>';			
 
 		 ?>
 		<div class="mainTitle2">
