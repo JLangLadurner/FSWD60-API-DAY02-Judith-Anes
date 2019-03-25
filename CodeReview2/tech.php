@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +34,28 @@
 		<div id="mainTitle2">
 			<p>Tech</p>
 		</div>
-		
+		<?php
+
+
+/*
+
+* Fetch the RSS feed
+
+* that contains BBC’s technology news
+
+*/
+require_once 'RESTfull.php';
+$url = 'http://feeds.bbci.co.uk/news/technology/rss.xml';
+$response = curl_get($url);
+$xml = simplexml_load_string($response);
+foreach ($xml->channel->item as $item) {
+echo '<a href="'.$item->link.'" target="_blank">'.$item->title.'</a><br><img src="'.$item->media.'" alt="pic"><br>';
+}
+
+
+?>
+
+
 		</main>
 		<footer class="footer">
 			<div id="navBar2">
