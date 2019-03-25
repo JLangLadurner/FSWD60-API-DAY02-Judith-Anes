@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*Insert a background picture for the whole body*/
+body{
+	background-image: url("../img/back.png");
+}
+/*change the background color of the header into a black color with using the programm colorpick eyedropper */
+#header {
+    background-color: #000000;
+}
+/*give the p tag of the header a color + change the font size + set the text to the center and increase the box size with line height*/
+#header p {
+    color: white;
+    line-height: 80px;
+    font-size: 2.5em;
+    padding-left: 40px;
+    margin: 0;
+    text-align: center;
+}
+/*change the background color of the container div and add a opacitiy to see the through the div*/
+.container {
+    background-color: #161D25;
+	opacity: 0.9;
+}
+/* add background color to the navigationbar and disable the border because if we use bootstrap library of navigationsbar(they include a border) */
+.navbar {
+    background-color: #434343;
+    border: none;
+
+}
+
+.navl a{
+    color: #EBEBEB;
+    font-size: 1.5em;
+}
+
+/* change the font size and color from the p tag in the row div and set the text in the center*/
+.text {
+    font-size: 2em;
+    color: #CDCECF;
+    text-align: center;
+
+}
+/*change the color and the size of the sort buttom and disable the border*/
+.sort {
+    display: flex;
+    font-size: 1.5em;
+    background-color: #161D25;
+    color: #BCBCBC;
+    border: none;
+}
+/* remove the blick border */
+.sort:focus{
+	outline: 0 !important;
+}
+/* change the color and the size of the glyphicon*/
+.glyphicon {
+    font-size: 17pt;
+    color: #BCBCBC;
+   
+}
+/* make a flex box with the content divs where the json divs are inserted*/
+#content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* set the background color and color of the div boxes where the content is inside*/
+.film {
+    background-color: #111111;
+    color: #CECECE;
+    margin: 30px;
+}
+/*use flex box to set the position correctly*/
+.film.row{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+/*move the content down*/
+.film-img {
+    padding-top: 25px;
+}
+/*set the the width and height of the pictures and include a border radius*/
+.film-img img {
+    border-radius: 25px;
+    width: 200px;
+    height: 300px;
+}
+/*move the description to the right side */
+.description {
+    padding-left: 60px;
+}
+/*change the font size of the description text*/
+.description h2{
+	font-size: 15pt;
+}
+/*style the btn and set it to the right position*/
+.btn {
+	width: 120px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-left: 250px;
+	background: none;
+	color: green;
+	margin-top: -20px;
+}
+/*remove the click border from the button*/
+.btn:focus{
+	outline: 0 !important;
+}
+
+/* change the font size and color of the text "like"*/
+.btn h4{
+	font-size: 2em;
+	color: green;
+}
+
+/*create a circle with a green background and white color content*/
+.include{
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	margin-bottom: 20px;
+	color: white;
+	background-color: green;
+	border: 1px solid green;
+}
+/*move the numbers 10px down*/
+.include p{
+	margin-top: 10px;
+}
+/*remove the click border from the like buttom*/
+.likes:focus{
+	outline: 0 !important;
+}
+/*change the background color of the footer*/
+.footer{
+	background-color: #000000;
+}
+/* change the line height font size and color of the footer p tag and set the text to the center*/
+.footer p {
+    color: white;
+    line-height: 120px;
+    font-size: 2em;
+    text-align: center;
+}
+
