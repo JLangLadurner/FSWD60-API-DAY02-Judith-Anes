@@ -3,9 +3,7 @@
     padding: 0;
 }
 /*Insert a background picture for the whole body*/
-body{
-	background-image: url("../img/back.png");
-}
+
 /*change the background color of the header into a black color with using the programm colorpick eyedropper */
 #header {
     background-color: #000000;
