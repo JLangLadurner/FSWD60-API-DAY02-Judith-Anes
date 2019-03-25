@@ -1,0 +1,276 @@
+*{
+	margin: 0;							
+	padding: 0;
+	font-family: Verdana;
+	
+}
+
+.container{							/* the width of the Homepage is set to 100% */
+	position:relative;
+	width: 100%;
+	height: auto;
+	
+}
+
+header{									
+	display: flex;				/* with display-flex I put the picture into one row */
+	width: 100%;
+	height: auto;
+	background-color: #610B21; 		/* changed the color of the div background into a dark red */
+	padding: 40px;
+	justify-content: space-between; /* make space between the pictures */
+
+}
+
+#first img{							/* set the size of the logo */
+	width: 350px;
+	height: auto;
+	margin-top: 27px;				/* move the picture 50 px down */
+	
+}
+#second img{						/* size of the second picture in the header */
+	width: 900px;
+	height: 120px;					
+				
+}
+
+#navBar{
+	background-color: black;		/* set background color to black */
+	width: 103.5%;					/* set the size of the navbar div same as header size */
+	padding: 15px;					/* make the div content bigger */
+}
+
+#navBar ul li{						/* set the navbar content inline */
+	display: inline;
+	
+}
+
+#navBar li a {				
+	color: white;					/* change the content color into white */
+	text-decoration: none;			/* remove the underline in the text */
+	font-size: 25pt;				/* set the font size of the content */
+	padding-left: 20px;				/* made space between the content */
+}
+
+#mainTitle1 span{
+	display: flex;
+	justify-content: flex-end;
+	padding: 20px;
+	font-size: 15pt;
+	color: grey;
+}
+
+.main{
+	position: relative;
+	width: 95%;
+	height: auto;
+	margin: 0 auto;
+}
+
+#mainTitle2{
+	
+	background-color: lightgrey;
+}
+
+#mainTitle2 p{
+	font-size: 25pt;
+	color: #424242;
+	padding: 5px;
+	padding-left: 15px;
+}
+
+
+
+#pictures1{
+	position: relative;
+	display: flex;
+	width: 85%;
+	height: 270px;
+	margin-top: 20px;
+	justify-content: space-between;
+	
+}
+#pictures1 img{
+	width: 360px;
+	height: auto;
+	
+
+}
+
+#pictures1 .size{
+	width: 350px;
+}
+
+figure figcaption{
+	width: 100%;
+	background-color: black;
+	padding: 15px 0px 15px 10px;
+	transform: translateY(-100%)
+}
+
+figure b{
+	position: relative;
+	font-size: 12pt;
+	color: white;
+    
+   
+}
+.mainTitle3{
+	width: 85%;
+	background-color: lightgrey ;
+}
+
+.mainTitle3 p{
+	font-size: 25pt;
+	color: #424242;
+	
+}	
+
+#banner2{
+	position: absolute;
+	margin-left: 1200px;
+	margin-top: -311px;
+}
+
+#banner2 img{
+	width: 160px;
+	height: 600px;
+}
+
+#pictures2{
+	width: 85%;
+	display: flex;
+	justify-content: space-between;
+}
+#pictures2 img{
+	width: 360px;
+	height: 250px;
+	
+}
+
+#pictures2 .size{
+	width: 350px;
+}
+
+#banner3{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+#banner3 img{
+	width: 1300px;
+	height: 150px;
+}	
+
+#pictures3{
+	position: relative;
+	width: 85%;
+	margin-top: 60px;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+	
+}
+
+#pictures3 img{
+	width: 550px;
+	height: 400px;
+
+}
+#pictures3 .size{
+	width: 540px;
+	height: 50px;
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+
+#pictures3 b{
+	font-size: 20pt;
+}
+
+#pictures4{
+	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+#pictures4 img{
+	width: 550px;
+	height: 400px;
+
+}
+#pictures4 .size{
+	width: 540px;
+	height: 50px;
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+
+#pictures4 b{
+	font-size: 20pt;
+}
+#banner4 img{
+	width: 160px;
+	height: 900px	
+}
+
+#banner4{
+	position: absolute;
+	margin-left: 1200px; 
+}
+
+.footer{
+	width: 100%;
+	border: 2px solid black;
+	background-color: black;
+	
+}
+
+#navBar2{
+	margin-bottom: 50px;
+}
+
+#navBar2 ul li{						/* set the navbar content inline */
+	display: inline;
+	
+}
+
+#navBar2 li a {				
+	color: white;					/* change the content color into white */
+	text-decoration: none;			/* remove the underline in the text */
+	font-size: 15pt;				/* set the font size of the content */
+	padding-left: 20px;				/* made space between the content */
+}
+
+#banner5 img{
+	width: 300px;
+	height: auto;
+	margin-left: 75%;
+	margin-bottom: 20px;
+
+}
+
+ h5{
+	color: white;
+	font-size: 15pt;
+	text-align: center;
+	margin-bottom: 50px;
+
+}
+
+@media screen and (max-width: 480px) {
+ .container figure figcaption{
+        font-size: 50pt;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1200px) {
+.container figure figcaption {
+        font-size: 30pt;
+    }
+}
+@media screen and (min-width:1201px) {
+.container figure figcaption {
+        font-size: 20pt;
+ }
+
