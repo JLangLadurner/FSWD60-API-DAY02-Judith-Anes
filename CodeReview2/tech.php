@@ -28,10 +28,20 @@
 			</ul>
 		</div>
 		<main class="main">
-		<div id="mainTitle1">
-			
+		<div class="mainTitle2">
+			<div id=joke>
+			<p>Jokes</p>
+			</div>
 		</div>
-		<div id="mainTitle2">
+		<?php 
+			require_once 'RESTfull.php';
+			$url = 'http://api.serri.codefactory.live/random/';
+			$response = curl_get($url);
+			$result = json_decode($response);
+			echo $result->joke;			
+
+		 ?>
+		<div class="mainTitle2">
 			<p>Tech</p>
 		</div>
 		<?php

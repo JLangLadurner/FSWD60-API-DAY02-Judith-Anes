@@ -67,16 +67,17 @@ header{
 	margin: 0 auto;
 }
 
-#mainTitle2{
+.mainTitle2{
 	
 	background-color: lightgrey;
 }
 
-#mainTitle2 p{
+.mainTitle2 p{
 	font-size: 25pt;
 	color: #424242;
 	padding: 5px;
 	padding-left: 15px;
+	margin:  15px 0px;
 }
 
 
